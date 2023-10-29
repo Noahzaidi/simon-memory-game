@@ -72,20 +72,19 @@ function playSound(name){
     audio.play();
 }
 
-//Add animtion on buttons when clicked
+//Añadir animación
 function animatePress(currentColor) {
-
-    //2. Use jQuery to add this pressed class to the button that gets clicked inside animatePress().
+ 
     $("#" + currentColor).addClass("pressed");
   
-    //3. use Google/Stackoverflow to figure out how you can use Javascript to remove the pressed class after a 100 milliseconds.
+
     setTimeout(function () {
       $("#" + currentColor).removeClass("pressed");
     }, 100);
   }
 
 
-//Change the background when buttons are clicked
+//cambiar color background
 function setBackground(currentColor) {
 
     $("body").addClass(currentColor);
