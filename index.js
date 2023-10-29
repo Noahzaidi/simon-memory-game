@@ -13,12 +13,15 @@ startGame()
 //añadir event listeners/ añadir color al azar
 
 function startGame(){
-    $("body").off("keypress").on("keypress", function(){
+    
+    $("body").on("keypress", function(){
         level=0;
         
 
 
         addPattern();
+    
+    $("body").off("keypress")
             
             
         
